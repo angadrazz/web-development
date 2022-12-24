@@ -5,15 +5,16 @@ function outer () {
         console.log(i,j);
         var inner  = function() {
                 var k = 30;
-                console.log(j,j,k);
+                console.log(j,k);
+                k++;
 
         }
         return inner();
 }
 
 var inner = outer();
-//inner();
-
+inner();
+inner();
 function init() {
         var name = 'Mozilla'; // name is a local variable created by init
         function displayName() {
