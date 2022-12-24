@@ -76,7 +76,7 @@
                             console.log( i ); 
                           };
                           shooters.push(shooter);
-                ``          i++;
+                         i++;
                         }
                         return shooters;
                       }
@@ -84,3 +84,35 @@
                       army[0]();
                       army[5]();
                       
+function makeArmy1(){
+        let shooters = [];
+        let j = 0;
+        while(j < 10){
+                let shooter = function(){
+                        console.log(i);
+                };
+                shooters.push(shooter);
+                j++;
+        }
+
+        return shooters;
+}
+
+let army1 = makeArmy1();
+army[6]();
+army[8]();
+
+
+function makeArmy() {
+        let shooters = [];
+        for(let i = 0; i < 10; i++) {
+          let shooter = function() {
+            console.log( i );
+          };
+          shooters.push(shooter);
+        }
+        return shooters;    
+      }
+      let army = makeArmy();
+      army[0]();
+      army[5]();
