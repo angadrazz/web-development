@@ -13,8 +13,8 @@ function outer () {
 }
 
 var inner = outer();
-inner();
-inner();
+// inner();
+// inner();
 function init() {
         var name = 'Mozilla'; // name is a local variable created by init
         function displayName() {
@@ -24,5 +24,31 @@ function init() {
         displayName();
       }
       init();
+
+
+
+      function Adder(x) {
+        return function(y) {
+          return x + y;
+        };
+      }
+      var add5 = Adder(5);
+      var add10 = Adder(10);
+      console.log(add5(2));
+      console.log(add10(2));
+
+//       next question
+
+
+var add = (function ( ) {
+        var counter = 0;
+        return function ( ) {
+             counter += 1; 
+             return counter;
+      }
+      })();    
+      console.log(add());
+      console.log(add());
+      console.log(add());
       
 
