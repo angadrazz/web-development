@@ -62,4 +62,7 @@ const myObject = {
     }
     var a = new Person("A");
     var b = new Person("B");
+
+    console.log(a);
+    console.log(b);
     
