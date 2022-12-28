@@ -53,3 +53,13 @@ const myObject = {
         var a = "I am func1";
         console.log(a);
      }
+
+     function Person(name){
+        this.name = name;
+        this.print = function(){
+            console.log(this);
+        }
+    }
+    var a = new Person("A");
+    var b = new Person("B");
+    
