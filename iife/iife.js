@@ -66,3 +66,12 @@ var globalHello1 = joe.hello.bind(joe) ;
 var globalHello2 = joe.hello ;
 globalHello1();
 globalHello2.bind(joe)();
+
+
+var joe = {
+    name: "Angad"
+}; 
+
+function print(){
+    console.log(this);
+}
