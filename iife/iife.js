@@ -69,9 +69,11 @@ globalHello2.bind(joe)();
 
 
 var joe = {
-    name: "Angad"
+    name: "Joe"
 }; 
 
 function print(){
     console.log(this);
 }
+
+print.call(joe);
