@@ -41,3 +41,16 @@ function foo(n) {
 }
 foo(3);    
 console.log("Other Quetion ");
+
+var joe = {
+    name: "Joe"
+ }; 
+ 
+ function print(){
+    console.log(this) ; 
+ }
+
+ print.apply(joe);
+ //print(joe);
+ print.bind(joe)() ;
+ print.bind(joe)() ;
