@@ -20,3 +20,11 @@ function Abc() {
         }
         var obj = new Abc();
         console.log(obj.a, obj.b);
+
+
+function User(name) {
+                this.isAdmin = false;
+                return name;
+                }
+                var user = User("Jack");
+                console.log(user);
