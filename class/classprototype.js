@@ -17,10 +17,10 @@ console.log(s1);
 console.log(s2);
 
 
-class Person {
+class Person1 {
         constructor(name) { this.name = name; }
      }
-     console.log(typeof( Person));
+     console.log(typeof( Person1));
 
 
      var Person = class {
