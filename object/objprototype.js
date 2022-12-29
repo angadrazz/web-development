@@ -63,3 +63,12 @@ function A(){
 // The obj3 made using Object() directly inherits the color value pink from its prototype as it has no color property. 
 
 // The obj4 has no property color, so it looks up in the prototype chain in the function prototype, which also doesn’t have a property color. So it looks further up in the chain in the Object function, then in Object.prototype and assigns pink color.
+
+
+const object11 = new Object();
+object11.property1 = 42;
+console.log(Object()); //Object{}
+
+const object1 = new Object();
+object1.property1 = 42;
+console.log(object1);
