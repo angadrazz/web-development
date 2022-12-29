@@ -21,3 +21,13 @@ class Person {
         constructor(name) { this.name = name; }
      }
      console.log(typeof( Person));
+
+
+     var Person = class {
+        constructor() {}
+        sayHello() {
+          return 'Hello!';
+        }
+      };
+      var instance = new Person();
+      console.log(instance.sayHello()+" "+Person.name);
