@@ -24,3 +24,4 @@ function A(){
    var d = new A();
    
    console.log(d.color);
+   console.log(A.color);
