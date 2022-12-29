@@ -16,6 +16,9 @@ var vehicle2 = new vehicle(6, 65400);
 console.log(vehicle1);
 console.log(vehicle2);
 
+// The Prototype Chain - ii
+// Look at the following code and determine the output and the most appropriate reason.
+
 function A(){
         this.name =  "A";
    }
@@ -48,3 +51,5 @@ function A(){
     
     console.log(obj1.color, obj2.color, obj4.color, obj3.color);
 
+
+    //blue red pink pink
