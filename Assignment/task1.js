@@ -28,4 +28,28 @@ var ninja = {
         };
         funcName.call(ninja,'sushi', 'algorithms'); 
         funcName.apply(ninja,['sushi', 'algorithms']);
+
+
+// Output
+
+function MyClass1() {}
+
+const obj1 = new MyClass1();
+const obj2 = MyClass1();
+
+console.log(obj1);
+console.log(obj2);
+
+// Output
+
+class MyClass {
+        constructor(x) {
+            console.log("constructor is called!");
+            this.x=x;
+        }
+     }
+     
+     const obj = new MyClass();
+     console.log(obj.x);
+
         
