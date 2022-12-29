@@ -52,4 +52,14 @@ function A(){
     console.log(obj1.color, obj2.color, obj4.color, obj3.color);
 
 
-    //blue red pink pink
+// blue red pink pink
+// Solution Description
+// Explanation: 
+
+// The obj1 has a property color of blue, so it doesn’t check for the value up the prototype chain. 
+
+// The obj2 doesn’t have a property color, so it looks up in the prototype chain in its prototype, and a red value gets assigned to it. 
+
+// The obj3 made using Object() directly inherits the color value pink from its prototype as it has no color property. 
+
+// The obj4 has no property color, so it looks up in the prototype chain in the function prototype, which also doesn’t have a property color. So it looks further up in the chain in the Object function, then in Object.prototype and assigns pink color.
