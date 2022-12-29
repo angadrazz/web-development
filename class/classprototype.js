@@ -31,3 +31,22 @@ class Person1 {
       };
       var instance = new Person();
       console.log(instance.sayHello()+" "+Person.name);
+
+
+
+//       Inheritance in JavaScript
+//       Send Feedback
+//       What will the following code print in the console?
+      class Vehicle{
+      constructor ( doors, wheels){
+          this.doors = doors;
+          this.wheels = wheels;
+      }
+      }
+      class bus extends Vehicle{
+          constructor(windows){
+              this.windows = windows;
+          }
+      }
+      var b = new bus(10);
+      console.log(bus.windows);
