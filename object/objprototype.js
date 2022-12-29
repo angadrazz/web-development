@@ -1,6 +1,7 @@
 function vehicle (numwheels, price){
         this.numwheels = numwheels;
         this.price = price;
+        console.log(vehicle);
 }
 
 vehicle.prototype.getPrice = function(){
