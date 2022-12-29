@@ -22,9 +22,37 @@ function Abc() {
         console.log(obj.a, obj.b);
 
 
-function User(name) {
-                this.isAdmin = false;
-                return name;
-                }
-                var user = User("Jack");
-                console.log(user);
+// function User(name) {
+//                 this.isAdmin = false;
+//                 return name;
+//                 }
+//                 var user = User("Jack");
+//                 console.log(user);
+
+
+
+//                 class Person = {
+//                         constructor(name) { this.name = name; }
+                        
+//                         } 
+//                         var person = new Person("James");
+
+
+
+class Person {
+        constructor(name) {
+            this.name = name;
+        }
+        get name() {
+            return this._name;
+        }
+        set name(value) {
+            this._name = value;
+        }
+        }
+        var person = new Person("James");
+        
+
+
+        
+        
