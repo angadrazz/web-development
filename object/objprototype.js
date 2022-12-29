@@ -23,4 +23,4 @@ function A(){
    Object.prototype.color = "red";
    var d = new A();
    
-   console.log(d.color) ;
+   console.log(d.color);
